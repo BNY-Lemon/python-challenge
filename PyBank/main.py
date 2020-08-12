@@ -57,3 +57,7 @@ print_string = "Financial Analysis\n" \
 	f"Greatest Decrease in Profits: {greatest_decrease['Month']} (${greatest_decrease['Value']:.0f})\n"
 
 print(print_string)
+
+# Create txt file
+with open(os.path.join("Analysis", "output.txt"), "w") as file:
+	file.write(print_string)
